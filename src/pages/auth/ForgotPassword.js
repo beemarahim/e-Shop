@@ -19,7 +19,7 @@ const ForgotPassword = () => {
         if (user && user.token)
             navigate("/")
 
-    }, [user]);
+    }, [user, navigate]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
