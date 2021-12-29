@@ -24,6 +24,10 @@ import ProductCreate from "./pages/admin/product/ProductCreate";
 import AllProducts from "./pages/admin/product/AllProducts";
 import ProductUpdate from "./pages/admin/product/ProductUpdate";
 import Product from "./pages/Product";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import Payment from "./pages/Payment";
+
 
 
 
@@ -108,6 +112,10 @@ const App = () => {
         <Route exact path="/admin/products" element={<AllProducts /> } />
         <Route exact path="/admin/product/:slug" element={<ProductUpdate /> } />
         <Route exact path="/product/:slug" element={<Product/>} />
+        <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/checkout" element={<Checkout />} />
+        <Route exact path="/payment" element={<Payment />} />
+        
       </Routes>                 
 
     

@@ -39,7 +39,7 @@ const roleBasedRedirect = (res) => {
     navigate ("/admin/dashboard")
   } else {
 
-    navigate("/user/history")
+    navigate("/")
   }
 }
 

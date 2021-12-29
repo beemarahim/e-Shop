@@ -1,5 +1,6 @@
 import React from "react";
 import { Select } from "antd";
+
 const { Option } = Select;
 
 const ProductCreateForm = ({
@@ -111,14 +112,12 @@ const ProductCreateForm = ({
         </select>
       </div>
 
-      
-      
       <div className="form-group">
         <label>Category</label>
         <select
           name="category"
           className="form-control"
-          onChange={ handleCatagoryChange}
+          onChange={handleCatagoryChange}
         >
           <option>Please select</option>
           {categories.length > 0 &&
@@ -129,7 +128,6 @@ const ProductCreateForm = ({
             ))}
         </select>
       </div>
-      
 
       {showSub && (
         <div>
@@ -150,10 +148,9 @@ const ProductCreateForm = ({
           </Select>
         </div>
       )}
- 
- <br/>
 
-      <button className="btn btn-outline-primary" style={{marginTop : "15px"}} >Save</button>
+      <br />
+      <button className="btn btn-outline-info">Save</button>
     </form>
   );
 };
